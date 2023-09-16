@@ -1,0 +1,98 @@
+.tour {
+  background: $primary-color;
+
+  &__wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    gap: 16px;
+    padding: 80px 0;
+    @include breakpoint("tablet") {
+      padding: 80px 16px;
+    }
+  }
+
+  .topText {
+    color: $secondary-color;
+  }
+
+  &__schedule {
+    .scheduleContent {
+      background: $secondary-color;
+      padding: 8px 16px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      border-bottom: 1px solid #ddd;
+      color: $muted;
+
+      .alert {
+        background: $button-color;
+        color: $secondary-color;
+        padding: 2px 8px;
+      }
+
+      .available {
+        background: $primary-color;
+        width: 25px;
+        height: 25px;
+        color: $secondary-color;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 16px;
+      }
+    }
+  }
+
+  &__places {
+    display: flex;
+    gap: 16px;
+    @include breakpoint("phone") {
+      display: block;
+      .card {
+        margin-top: 16px;
+      }
+    }
+
+    .card {
+      flex: 1;
+      background: $secondary-color;
+      img {
+        width: 100%;
+      }
+
+      &__content {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        font-size: 15px;
+
+        .top {
+          font-weight: $bold;
+        }
+        .mute {
+          color: $muted;
+        }
+        p {
+          line-height: 1.5;
+          font-weight: $normal;
+        }
+        .button {
+          width: fit-content;
+          padding: 8px 16px;
+          background: $primary-color;
+          color: $secondary-color;
+          cursor: pointer;
+          &:hover {
+            background: $muted;
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

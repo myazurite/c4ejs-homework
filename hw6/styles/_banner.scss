@@ -1,0 +1,40 @@
+.banner {
+  display: grid;
+  isolation: isolate;
+
+  & > * {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+
+  &__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    padding: 32px;
+    color: $secondary-color;
+    @include breakpoint('phone') {
+      display: none;
+    }
+
+    .topText {
+      font-size: $font-md;
+      font-weight: $extra-light;
+    }
+
+    .botText {
+      font-size: $font-sm;
+      font-weight: $normal;
+    }
+  }
+}

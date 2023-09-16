@@ -1,0 +1,96 @@
+.nav {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+
+  .navList {
+    list-style: none;
+    background: $primary-color;
+    display: flex;
+
+    &__item {
+      color: $secondary-color;
+      font-size: 16px;
+      font-weight: $light;
+      padding: 12px 24px;
+
+      &:hover {
+        background: $secondary-color;
+        color: $primary-color;
+      }
+
+      &.merch {
+        display: none;
+      }
+
+      &:last-child {
+        margin-left: auto;
+        &:hover {
+          background: $button-color;
+          i {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      &.dropdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        @include breakpoint('phone') {
+          display: none;
+        }
+
+        .menu {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          z-index: 1;
+          top: 100%;
+          left: 0;
+          a {
+            display: block;
+            padding: 10px 24px;
+            &:hover {
+              background: #cccccc;
+            }
+          }
+        }
+
+        &:hover {
+          background: #cccccc;
+        }
+
+        &:hover .menu {
+          display: block;
+        }
+      }
+    }
+
+    #mobileMenuIcon {
+      display: none;
+    }
+  }
+
+  @include breakpoint("phone") {
+    .navList {
+      justify-content: space-between;
+      .merch {
+        display: block;
+      }
+      &__item:last-child, .mobileNav {
+        display: none;
+      }
+      #mobileMenuIcon {
+        color: $secondary-color;
+        display: grid;
+        place-items: center;
+        margin-right: 16px;
+      }
+    }
+  }
+}

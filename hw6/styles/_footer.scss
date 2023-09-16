@@ -1,0 +1,31 @@
+.footer {
+  margin: auto;
+  display: grid;
+  place-items: center;
+  max-width: 800px;
+  padding: 80px 0;
+  gap: 24px;
+
+  &__media {
+    display: flex;
+    gap: 10px;
+    a {
+      display: inline-block;
+
+    }
+    i {
+      font-size: 30px;
+      color: $muted;
+      &:hover {
+        color: #a0a0a0;
+      }
+    }
+  }
+
+  .muted {
+    font-style: normal;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

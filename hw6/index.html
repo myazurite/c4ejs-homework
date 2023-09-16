@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/e3689d1738.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="navList">
+            <a class="navList__item home" href="#">HOME</a>
+            <a class="navList__item mobileNav" href="#">BAND</a>
+            <a class="navList__item mobileNav" href="#">TOUR</a>
+            <a class="navList__item mobileNav" href="#">CONTACT</a>
+            <a class="navList__item mobileNav merch" href="#">MERCH</a>
+            <div class="navList__item dropdown" href="#">
+                <span>MORE</span>
+                <i class="fa-solid fa-caret-down"></i>
+                <div class="menu">
+                    <a href="#" class="menu__item">Merchandise</a>
+                    <a href="#" class="menu__item">Extras</a>
+                    <a href="#" class="menu__item">Media</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-bars" id="mobileMenuIcon"></i>
+            <a class="navList__item" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner__img">
+            <img src="./assets/la.jpg" alt="">
+        </div>
+        <div class="banner__text">
+            <p class="topText">Los Angeles</p>
+            <p class="botText">Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro__text">
+            <p class="topText">THE BAND</p>
+            <p class="muted">We love music</p>
+            <p class="botText">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="intro__member">
+            <div class="card">
+                <p>Name</p>
+                <img src="./assets/bandmember.jpg" alt="">
+            </div>
+            <div class="card">
+                <p>Name</p>
+                <img src="./assets/bandmember.jpg" alt="">
+            </div>
+            <div class="card">
+                <p>Name</p>
+                <img src="./assets/bandmember.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="tour">
+        <div class="tour__wrapper">
+            <div class="topText">TOUR DATES</div>
+            <div class="muted">Remember to book your tickets!</div>
+            <div class="tour__schedule">
+                <div class="scheduleContent">
+                    <span>September</span>
+                    <div class="alert">Sold out</div>
+                </div>
+                <div class="scheduleContent">
+                    <span>October</span>
+                    <div class="alert">Sold out</div>
+                </div>
+                <div class="scheduleContent">
+                    <span>November</span>
+                    <div class="available">3</div>
+                </div>
+            </div>
+            <div class="tour__places">
+                <div class="card">
+                    <img src="./assets/newyork.jpg" alt="">
+                    <div class="card__content">
+                        <div class="top">New York</div>
+                        <div class="mute">Fri 27 Nov 2016</div>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <div class="button">Buy Tickets</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/paris.jpg" alt="">
+                    <div class="card__content">
+                        <div class="top">Paris</div>
+                        <div class="mute">Sat 28 Nov 2016</div>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <div class="button">Buy Tickets</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/sanfran.jpg" alt="">
+                    <div class="card__content">
+                        <div class="top">San Francisco</div>
+                        <div class="mute">Sun 29 Nov 2016</div>
+                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <div class="button">Buy Tickets</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="topText">CONTACT</div>
+        <div class="muted">Fan? Drop a note!</div>
+        <div class="contact__content">
+            <div class="info">
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Chicago, US</span>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Phone: +00 151515</span>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Email: mail@mail.com</span>
+                </div>
+            </div>
+            <div class="form">
+                <div class="form__personalInfo">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <input type="text" placeholder="Message" class="message">
+                <div class="button">SEND</div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner__img">
+            <img src="./assets/map.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__media">
+            <a href="#">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-snapchat"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div class="muted">
+            Powered by
+            <a href="#">w3.css</a>
+        </div>
+    </div>
+</body>
+</html>

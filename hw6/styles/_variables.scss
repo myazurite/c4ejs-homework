@@ -1,0 +1,27 @@
+@mixin breakpoint($point) {
+  @if $point == phone {
+    @media (max-width: 600px) { @content; }
+  }
+  @elseif $point == tablet {
+    @media (max-width: 992px) { @content; }
+  }
+  @elseif $point == desktop {
+    @media (min-width: 992px) { @content; }
+  }
+}
+
+$secondary-color: #fff;
+$primary-color: #000;
+$muted: #898989;
+$button-color: #f44336;
+
+$font-sm: 14px;
+$font-normal: 15px;
+$font-md: 24px;
+$font-lg: 32px;
+
+$extra-light:300;
+$light: 400;
+$normal: 500;
+$bold: 600;
+$extra-bold: 700;
